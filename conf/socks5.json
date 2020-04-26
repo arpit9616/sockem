@@ -1,0 +1,8 @@
+{
+    "host": "::",
+    "proxy_host": "::1",
+    "port": 1080,
+    "firewall": false,
+    "ipsAllowed": "127.0.0.0/8",
+    "timeout": 20000
+}
