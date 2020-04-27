@@ -2,7 +2,7 @@
     "host": "::",
     "proxy_host": "::1",
     "port": 1080,
-    "firewall": false,
-    "ipsAllowed": "127.0.0.0/8",
+    "firewall": true,
+    "ipsAllowed": ["127.0.0.0/8","::1/128"],
     "timeout": 20000
 }
