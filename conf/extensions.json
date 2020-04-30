@@ -1,0 +1,5 @@
+{
+    "pre_connect":["dns"],
+    "pre_out":[],
+    "pre_in":[]
+}

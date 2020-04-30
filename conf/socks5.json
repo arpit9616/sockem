@@ -4,5 +4,6 @@
     "port": 1080,
     "firewall": true,
     "ipsAllowed": ["127.0.0.0/8","::1/128"],
-    "timeout": 20000
+    "clientTimeout": 10000,
+    "remoteTimeout": 10000
 }
