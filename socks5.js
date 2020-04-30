@@ -27,4 +27,4 @@ if (cluster.isMaster) {
 		console.log("[SOCKS] Forking a new process to compensate.");
 		cluster.fork();
 	});
-} else require(CONSTANTS.LIBDIR + "/server.js").bootstrap();
+} else require(CONSTANTS.LIBDIR + "/socks5.js").bootstrap();
