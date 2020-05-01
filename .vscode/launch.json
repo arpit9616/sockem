@@ -7,6 +7,16 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch Command Line Proxy",
+            "program": "${workspaceFolder}\\lib\\socks5.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "args":["::","1201","127.0.0.1","4421"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch SOCKS5 Single Server",
             "skipFiles": [
                 "<node_internals>/**"
