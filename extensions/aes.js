@@ -16,5 +16,5 @@ module.exports.preIn = function (socket, chunk, callback) {
 function _isEndpointEnabled(socket) {
     const check = socket.remoteFamily == "IPv6" ? `[${socket.remoteAddress}]:${socket.remotePort}` :
         `${socket.remoteAddress}:${socket.remotePort}`;
-    if (conf[check] || conf[socket.remoteAddress]) return true; else return false;
+    if (conf.endpoints[check] || conf.endpoints[socket.remoteAddress]) return true; else return false;
 }
