@@ -19,12 +19,12 @@ if (cluster.isMaster) {
 	}
 
 	// Fork workers.
-	console.log("[SOCKS] Starting " + numWorkers + " workers.");
+	console.log("[SOCKS5] Starting " + numWorkers + " workers.");
 	for (let i = 0; i < numWorkers; i++) cluster.fork();
 
 	cluster.on("exit", (server, _code, _signal) => {
-		console.log("[SOCKS] Worker server with PID: " + server.process.pid + " died.");
-		console.log("[SOCKS] Forking a new process to compensate.");
+		console.log("[SOCKS5] Worker server with PID: " + server.process.pid + " died.");
+		console.log("[SOCKS5] Forking a new process to compensate.");
 		cluster.fork();
 	});
 } else require(CONSTANTS.LIBDIR + "/socks5.js").bootstrap();
