@@ -1,5 +1,5 @@
 {
     "debug": true,
     "max_log_mb": 100,
-    "file": "server.log.ndjson"
+    "sync_log": true
 }
