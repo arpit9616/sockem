@@ -21,7 +21,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\lib\\socks5.js"
+            "program": "${workspaceFolder}\\lib\\socks5.js",
+            "trace": true
         }
     ]
 }
