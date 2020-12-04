@@ -5,5 +5,6 @@
     "firewall": true,
     "ipsAllowed": ["127.0.0.0/8","::1/128","192.168.0.0/16"],
     "clientTimeout": -1,
-    "remoteTimeout": -1
+    "remoteTimeout": -1,
+    "noNewTCPServerPerClient": true
 }
